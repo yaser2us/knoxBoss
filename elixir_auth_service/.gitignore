@@ -1,0 +1,188 @@
+# Elixir Authentication Service .gitignore
+
+# ===============================
+# ENVIRONMENT FILES
+# ===============================
+# NEVER commit actual environment files with secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.staging
+.env.test
+
+# ===============================
+# ELIXIR / PHOENIX
+# ===============================
+# Build artifacts
+/_build/
+/cover/
+/deps/
+/doc/
+/.fetch
+
+# Generated files
+erl_crash.dump
+*.ez
+*.beam
+
+# Temporary files
+.elixir_ls/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Phoenix artifacts
+/priv/static/
+/priv/uploads/
+
+# Database
+/priv/repo/migrations/*.exs~
+/priv/repo/structure.sql
+
+# Logs
+*.log
+/log/
+/logs/
+
+# ===============================
+# SECRETS AND KEYS
+# ===============================
+# JWT secrets
+jwt_secret*
+guardian_secret*
+
+# Database credentials
+database.yml
+database.json
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# API keys
+*api_key*
+*secret_key*
+*private_key*
+
+# ===============================
+# DEVELOPMENT TOOLS
+# ===============================
+# IDE files
+.vscode/
+.idea/
+*.iml
+*.sublime-*
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*~
+*.swp
+*.swo
+\#*\#
+
+# ===============================
+# RUNTIME FILES
+# ===============================
+# Node.js (if using for assets)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===============================
+# DEPLOYMENT FILES
+# ===============================
+# Docker
+.dockerignore
+Dockerfile.prod
+
+# Kubernetes
+k8s-secrets.yaml
+kube-config
+*.kubeconfig
+
+# Release files
+*.tar.gz
+releases/
+rel/
+
+# ===============================
+# TESTING
+# ===============================
+# Test coverage
+/cover/
+coverage/
+.nyc_output/
+
+# Test databases
+test.db
+test.sqlite3
+
+# ===============================
+# MONITORING & LOGGING
+# ===============================
+# Application logs
+app.log
+error.log
+access.log
+audit.log
+
+# Monitoring data
+metrics/
+telemetry/
+
+# ===============================
+# BACKUP FILES
+# ===============================
+# Database backups
+*.sql
+*.dump
+backup/
+backups/
+
+# Config backups
+config.backup
+*.bak
+
+# ===============================
+# TEMPORARY FILES
+# ===============================
+# Temporary directories
+tmp/
+temp/
+/tmp/
+
+# Cache files
+.cache/
+*.cache
+
+# ===============================
+# SECURITY FILES
+# ===============================
+# Security scan results
+security-report.json
+vulnerability-report.json
+
+# Penetration test results
+pentest/
+
+# ===============================
+# CUSTOM ADDITIONS
+# ===============================
+# Add your project-specific ignores here

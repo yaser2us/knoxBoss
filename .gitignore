@@ -24,3 +24,4 @@ claude-flow.ps1
 hive-mind-prompt-*.txt
 ./node_modules
 ./node_modules/
+node_modules
